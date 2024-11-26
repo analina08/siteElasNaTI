@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     box-sizing: border-box;
@@ -15,6 +16,7 @@ body{
     align-items: center;
     position: fixed;
     width: 100%;
+    
 }
 .logo{
     flex: 20%;
@@ -22,7 +24,6 @@ body{
     font-size: 24px;
     margin-left: 10%;
     color: #B40404;
-
 }
 .menu{
     flex: 70%;
@@ -90,4 +91,75 @@ header{
     border-radius: 5px;
     text-decoration: none;
     display: inline-block;
+}
+.info{
+    margin-top: 80px;
+    /*border: 1px solid black;*/
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    padding: 5px;
+    display: inline-block;
+}
+.info h2{
+    width: 100%;
+    font-size: 30px;
+    margin: 0;
+    font-weight: bold;
+    color: #B40404;
+}
+.culi{
+    display: inline-block;
+    margin: 5px;
+}
+.card{
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 1%;
+    border: 2px solid #B40404;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.card:hover{
+    background-color: #B40404;
+    color: white;
+    padding: 4%;
+}
+.card:hover img{
+    display: none;
+}
+.textooculto{
+    display: none;
+}
+.card:hover .card-text{
+    display: none;
+}
+.card:hover .textooculto{
+    display: block;
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+.footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.footer-contato h2, .footer-hora h2, .footer-midia h2, .footer-mapa h2{
+    font-size: 20px;
+    color: #B40404;
+    margin-bottom: 10px;
+}
+.footer-contato, .footer-hora, .footer-midia, .footer-mapa{
+    font-size: 16px;
+}
+.footer-botton{
+    background-color:black;
+    padding: 10px 0;
 }
