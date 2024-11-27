@@ -29,8 +29,37 @@
     height: auto;
     display: block;
     margin: 20px auto;
-    border: 5px solid #B40404;
+    border: 5px solid white;
     border-radius: 10px;
     height: 400px;
     width: 600px;
+}
+#inicio{
+    transition: transform 0.3s ease-in-out;
+}
+#expansao{
+    transition: transform 0.3s ease-in-out;
+}
+#atualidade{
+    transition: transform 0.3s ease-in-out;
+}
+#inicio:hover{
+    transform: scale(1.05);
+}
+.expansao:hover{
+    transform: scale(1.05);
+}
+.atualidade:hover{
+    transform: scale(1.05);
+}
+@keyframes slideIn{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+.historia{
+    animation: slideIn 1s ease-out;
 }
